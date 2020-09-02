@@ -1,21 +1,26 @@
-const express = require('express');
+const express = require("express");
+const postDb = require("./postDb");
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   // do your magic!
+  res.status(200).json({ message: "Werk" });
 });
 
-router.get('/:id', (req, res) => {
+router.get("/:id", (req, res) => {
   // do your magic!
+  res.status(200).json({ message: "Werk" });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete("/:id", (req, res) => {
   // do your magic!
+  res.status(200).json({ message: "Werk" });
 });
 
-router.put('/:id', (req, res) => {
+router.put("/:id", (req, res) => {
   // do your magic!
+  res.status(200).json({ message: "Werk" });
 });
 
 // custom middleware
